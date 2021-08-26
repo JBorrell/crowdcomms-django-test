@@ -1,5 +1,7 @@
 from django.conf import settings
 from django.db import models
+from django.http.response import Http404
+
 
 # Create your models here.
 
@@ -15,7 +17,7 @@ class RabbitHole(models.Model):
 
 class Bunny(models.Model):
     '''
-
+    Rabbits are mammals
     '''
     name = models.CharField(max_length=64)
     home = models.ForeignKey(RabbitHole, on_delete=models.CASCADE, related_name='bunnies')
