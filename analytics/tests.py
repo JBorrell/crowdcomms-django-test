@@ -92,7 +92,3 @@ class UserVisitLoggingTests(APITestCase):
         self.assertEqual(response.data.get('recent_visitors'), 6)
         self.assertEqual(response.data.get('all_visitors'), 7)
         self.assertEqual(response.data.get('all_visits'), 17)
-
-
-
-
